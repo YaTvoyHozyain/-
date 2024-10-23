@@ -1,0 +1,222 @@
+/* Общие параметры */
+body {
+  background-color: #666262;
+  margin: 0;
+  padding: 15px;
+  max-width: 100%;
+  font-family: 'Arial', cursive;
+}
+
+.sample, .active1 {
+  background-color: #666262;
+  max-width: 100%;
+  transition: background-color 0.3s;
+  font-family: 'Arial', cursive;
+}
+
+/* Выровнять input и кнопки */
+.input-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Отступ между элементами */
+  margin-top: 10px; /* Отступ сверху */
+}
+
+input, input.active1 {
+  width: 100%; /* Ширина 100% для поля ввода */
+  padding: 10px;
+  border: 2px solid #f9f9f9;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button.add {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Стили для других элементов */
+.active2, .active3 {
+  transition: background-color 0.3s;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: center top;
+  background-attachment: fixed;
+  color: white;
+}
+
+.active2 {
+  background-image: url('fon2.png');
+  background-color: black;
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+.active3 {
+  background-image: url('fon3.png');
+  background-color: black;
+  font-family: 'Creepster', cursive;
+}
+
+/* Прочие стили для кнопок и страниц остаются без изменений */
+
+
+/* Стили кнопок */
+button, button.active1 {
+  background-color: #7f3e39;
+  border-radius: 50%;
+  padding: 15px 20px;
+  color: black;
+  cursor: pointer;
+  font-family: 'Arial', cursive;
+  font-weight: normal;
+  height: 50px;
+}
+
+button.active2, button.active3 {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  background-attachment: scroll;
+  font-size: 25px;
+}
+
+button.active2 {
+  background-image: url('snow.png');
+  width: 175px;
+  height: 175px;
+  font-family: 'Mountains of Christmas', cursive;
+  color: #8B0000;
+  font-weight: bold;
+}
+
+button.active3 {
+  background-image: url('pum1.png');
+  width: 150px;
+  height: 150px;
+  font-family: 'Creepster', cursive;
+  color: #ffffff;
+}
+
+/* Стили для input */
+input, input.active1 {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+input.active2, input.active3 {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+#sound{
+  width: 40%;
+  cursor: pointer;
+  margin: 0;
+}
+/* Стили для select */
+select, select.active1 {
+  background-color: #f9f9f9;
+  font-size: 22px;
+}
+
+/* Кнопка настроек */
+#sett {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Блок главного экрана */
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #a6966f;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#start {
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Экран людей */
+.members, .food {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Таблица */
+.fullTable {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Блок настроек */
+.settings {
+  border: none;
+  text-align: center;
+}
+
+#return {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+#word-sett {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
